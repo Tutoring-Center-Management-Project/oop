@@ -11,154 +11,144 @@ import java.util.Objects;
  * @author PC
  */
 public class GiaSu implements Comparable<GiaSu> {
-    private String Id;
-    private String HoVaTen;
-    private String SoDienThoai;
-    private String MonHoc;
-    private String Email;
-    private String DiaChi;
-    private String TruongDangHoc;
-    private String MucLuongMongMuon;
-    private Boolean IsTeacher;
-    private String KinhNghiem;
+    private String id;
+    private String hoVaTen;
+    private String soDienThoai;
+    private String monHoc;
+    private String email;
+    private String diaChi;
+    private String truongDangHoc;
+    private String mucLuongMongMuon;
+    private Boolean isTeacher;
+    private String kinhNghiem;
 
     public String getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(String Id) {
-        this.Id = Id;
+    public void setId(String id) {
+        this.id = id;
     }
-    
-    
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String Email) {
-        this.Email = Email;
-    }
-    
-
-    public Boolean getIsTeacher() {
-        return IsTeacher;
-    }
-
-    public void setIsTeacher(Boolean IsTeacher) {
-        this.IsTeacher = IsTeacher;
-    }
-
-    public String getKinhNghiem() {
-        return KinhNghiem;
-    }
-
-    public void setKinhNghiem(String KinhNghiem) {
-        this.KinhNghiem = KinhNghiem;
-    }
-    
-
-    public String getMucLuongMongMuon() {
-        return MucLuongMongMuon;
-    }
-
-    public void setMucLuongMongMuon(String MucLuongMongMuon) {
-        this.MucLuongMongMuon = MucLuongMongMuon;
-    }
-    
-
-    public String getTruongDangHoc() {
-        return TruongDangHoc;
-    }
-
-    public void setTruongDangHoc(String TruongDangHoc) {
-        this.TruongDangHoc = TruongDangHoc;
-    }
-
-    
-    public String getDiaChi() {
-        return DiaChi;
-    }
-
-    public void setDiaChi(String DiaChi) {
-        this.DiaChi = DiaChi;
-    }
-    
 
     public String getHoVaTen() {
-        return HoVaTen;
+        return hoVaTen;
     }
 
-    public void setHoVaTen(String HoVaTen) {
-        this.HoVaTen = HoVaTen;
+    public void setHoVaTen(String hoVaTen) {
+        this.hoVaTen = hoVaTen;
     }
 
     public String getSoDienThoai() {
-        return SoDienThoai;
+        return soDienThoai;
     }
 
-    public void setSoDienThoai(String SoDienThoai) {
-        this.SoDienThoai = SoDienThoai;
+    public void setSoDienThoai(String soDienThoai) {
+        this.soDienThoai = soDienThoai;
     }
 
     public String getMonHoc() {
-        return MonHoc;
+        return monHoc;
     }
 
-    public void setMonHoc(String MonHoc) {
-        this.MonHoc = MonHoc;
+    public void setMonHoc(String monHoc) {
+        this.monHoc = monHoc;
     }
 
-    public GiaSu(String Id, String HoVaTen, String SoDienThoai, String MonHoc, String Email, String DiaChi, String TruongDangHoc, String MucLuongMongMuon, Boolean IsTeacher, String KinhNghiem) {
-        this.Id = Id;
-        this.HoVaTen = HoVaTen;
-        this.SoDienThoai = SoDienThoai;
-        this.MonHoc = MonHoc;
-        this.Email = Email;
-        this.DiaChi = DiaChi;
-        this.TruongDangHoc = TruongDangHoc;
-        this.MucLuongMongMuon = MucLuongMongMuon;
-        this.IsTeacher = IsTeacher;
-        this.KinhNghiem = KinhNghiem;
+    public String getEmail() {
+        return email;
     }
 
-    public GiaSu(String Id) {
-        this.Id = Id;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public String getTruongDangHoc() {
+        return truongDangHoc;
+    }
+
+    public void setTruongDangHoc(String truongDangHoc) {
+        this.truongDangHoc = truongDangHoc;
+    }
+
+    public String getMucLuongMongMuon() {
+        return mucLuongMongMuon;
+    }
+
+    public void setMucLuongMongMuon(String mucLuongMongMuon) {
+        this.mucLuongMongMuon = mucLuongMongMuon;
+    }
+
+    public Boolean getIsTeacher() {
+        return isTeacher;
+    }
+
+    public void setIsTeacher(Boolean isTeacher) {
+        this.isTeacher = isTeacher;
+    }
+
+    public String getKinhNghiem() {
+        return kinhNghiem;
+    }
+
+    public void setKinhNghiem(String kinhNghiem) {
+        this.kinhNghiem = kinhNghiem;
+    }
+
+    public GiaSu(String id, String hoVaTen, String soDienThoai, String monHoc, String email, String diaChi, String truongDangHoc, String mucLuongMongMuon, Boolean isTeacher, String kinhNghiem) {
+        this.id = id;
+        this.hoVaTen = hoVaTen;
+        this.soDienThoai = soDienThoai;
+        this.monHoc = monHoc;
+        this.email = email;
+        this.diaChi = diaChi;
+        this.truongDangHoc = truongDangHoc;
+        this.mucLuongMongMuon = mucLuongMongMuon;
+        this.isTeacher = isTeacher;
+        this.kinhNghiem = kinhNghiem;
+    }
+    
     
 
     
 
-    
-
-    
+    public GiaSu(String id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {
-        return "GiaSu{" + "Id=" + Id + ", HoVaTen=" + HoVaTen + ", SoDienThoai=" + SoDienThoai + ", MonHoc=" + MonHoc + ", Email=" + Email + ", DiaChi=" + DiaChi + ", TruongDangHoc=" + TruongDangHoc + ", MucLuongMongMuon=" + MucLuongMongMuon + ", IsTeacher=" + IsTeacher + ", KinhNghiem=" + KinhNghiem + '}';
+        return "GiaSu{" + "id=" + id + ", hoVaTen=" + hoVaTen + ", soDienThoai=" + soDienThoai + ", monHoc=" + monHoc + ", email=" + email + ", diaChi=" + diaChi + ", truongDangHoc=" + truongDangHoc + ", mucLuongMongMuon=" + mucLuongMongMuon + ", isTeacher=" + isTeacher + ", kinhNghiem=" + kinhNghiem + '}';
     }
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     @Override
     public int compareTo(GiaSu o) {
-     return this.Id.compareTo(o.Id);
+     return this.id.compareTo(o.id);
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 53 * hash + Objects.hashCode(this.Id);
-        hash = 53 * hash + Objects.hashCode(this.HoVaTen);
-        hash = 53 * hash + Objects.hashCode(this.SoDienThoai);
-        hash = 53 * hash + Objects.hashCode(this.MonHoc);
-        hash = 53 * hash + Objects.hashCode(this.Email);
-        hash = 53 * hash + Objects.hashCode(this.DiaChi);
-        hash = 53 * hash + Objects.hashCode(this.TruongDangHoc);
-        hash = 53 * hash + Objects.hashCode(this.MucLuongMongMuon);
-        hash = 53 * hash + Objects.hashCode(this.IsTeacher);
-        hash = 53 * hash + Objects.hashCode(this.KinhNghiem);
-        return hash;
-    }
+     return Objects.hash(id, hoVaTen, soDienThoai, monHoc,  email, diaChi,  truongDangHoc,  mucLuongMongMuon, isTeacher, kinhNghiem);
+	}
 
     @Override
     public boolean equals(Object obj) {
@@ -172,35 +162,11 @@ public class GiaSu implements Comparable<GiaSu> {
             return false;
         }
         final GiaSu other = (GiaSu) obj;
-        if (!Objects.equals(this.Id, other.Id)) {
-            return false;
-        }
-        if (!Objects.equals(this.HoVaTen, other.HoVaTen)) {
-            return false;
-        }
-        if (!Objects.equals(this.SoDienThoai, other.SoDienThoai)) {
-            return false;
-        }
-        if (!Objects.equals(this.MonHoc, other.MonHoc)) {
-            return false;
-        }
-        if (!Objects.equals(this.Email, other.Email)) {
-            return false;
-        }
-        if (!Objects.equals(this.DiaChi, other.DiaChi)) {
-            return false;
-        }
-        if (!Objects.equals(this.TruongDangHoc, other.TruongDangHoc)) {
-            return false;
-        }
-        if (!Objects.equals(this.MucLuongMongMuon, other.MucLuongMongMuon)) {
-            return false;
-        }
-        if (!Objects.equals(this.IsTeacher, other.IsTeacher)) {
-            return false;
-        }
-        return Objects.equals(this.KinhNghiem, other.KinhNghiem);
+        return Objects.equals(id, other.id);
+       
     }
+
+    
 
     
     

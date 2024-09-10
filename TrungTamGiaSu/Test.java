@@ -12,23 +12,25 @@ public class Test {
         
         int luaChon=0;
         do {
-        //Hiển thị menu    
-        System.out.println("MENU ---------- ");
-        System.out.println("Vui lòng chọn chức năng: ");
-        System.out.println("1. Quản lý gia sư");
-        System.out.println("2. Quản lý học viên");
-        System.out.println("0. Thoát khỏi chương trình");
-        System.out.print("Nhập lựa chọn của bạn: ");
-        luaChon = sc.nextInt();
-        sc.nextLine();
+            //Hiển thị menu    
+            System.out.println("MENU ---------- ");
+            System.out.println("Vui lòng chọn chức năng: ");
+            System.out.println("1. Quản lý gia sư");
+            System.out.println("2. Quản lý học viên");
+            System.out.println("0. Thoát khỏi chương trình");
+            System.out.print("Nhập lựa chọn của bạn: ");
+            luaChon = sc.nextInt();
+            sc.nextLine();
         
             switch (luaChon) {
                 case 0:
                     System.out.println("Đã thoát khỏi chương trình.");
                     break;
+                    
                 case 1:
                     quanLyGiaSu();
                     break;
+                    
                 case 2:
                     quanLyHocVien();
                     break;
@@ -36,12 +38,12 @@ public class Test {
                 default:
                     System.out.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
             }
-        } while (luaChon != 0);
+        }
+        while (luaChon != 0);
     }
 
-   
-    public static void quanLyGiaSu() {
-        DanhSachGiaSu dsgs = new DanhSachGiaSu();
+public static void quanLyGiaSu() {
+    DanhSachGiaSu dsgs = new DanhSachGiaSu();
         int luaChon;
         do {
             System.out.println("1. Thêm gia sư vào danh sách.");
@@ -61,6 +63,7 @@ public class Test {
                 case 0:
                 System.out.println("Quay lại menu chính.");
                     break;
+                
                 case 1:
                 {// Thêm gia sư vào danh sách
                 System.out.println("Nhập Id: "); 
@@ -77,8 +80,9 @@ public class Test {
                 String truongdanghoc=sc.nextLine();
                 System.out.println("Nhập mức lương mong muốn: ");
                 String mucluong=sc.nextLine();
-                System.out.println("Kiểm tra gia sư có phải isteacher (Y/N): ");
-                Boolean isteacher=sc.nextBoolean(); 
+                System.out.println("Kiểm tra gia sư có phải isteacher (True/False): ");
+                Boolean isteacher=sc.nextBoolean();
+                sc.nextLine();
                 System.out.println("Nhập kinh nghiệm của gia sư: ");
                 String kinhnghiem=sc.nextLine();
                 System.out.println("Nhập email của gia sư :");
@@ -125,7 +129,7 @@ public class Test {
                 
                 case 8:
                 // Tìm kiếm tất cả gia sư dựa trên Tên được nhập từ bàn phím.       
-                System.out.println("Nhập họ và tên: "); 
+                System.out.println("Nhập tên: "); 
                 String hoVaTen = sc.nextLine();
 		System.out.println("Kết quả tìm kiếm: ");
 		dsgs.timGiaSu(hoVaTen);
@@ -134,7 +138,8 @@ public class Test {
                 default:
                 System.out.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
             }
-        } while (luaChon != 0);
+        } 
+        while (luaChon != 0);
         }
 
     public static void quanLyHocVien() {
@@ -142,24 +147,24 @@ public class Test {
         DanhSachHocVien dshv=new DanhSachHocVien();
         int luaChon;
         do {
-        System.out.println("1. Thêm học viên vào danh sách.");
-        System.out.println("2. In danh sách học viên ra màn hình.");
-        System.out.println("3. Kiểm tra danh sách học viên có rỗng hay không.");
-        System.out.println("4. Lấy ra số lượng học viên trong danh sách.");
-        System.out.println("5. Làm rỗng danh sách học viên.");
-        System.out.println("6. Kiểm tra học viên có tồn tại trong danh sách hay không, dựa trên mã id.");
-        System.out.println("7. Xóa một học viên ra khỏi danh sách dựa trên mã id.");
-        System.out.println("8. Tìm kiếm tất cả học viên dựa trên Tên được nhập từ bàn phím.");
-        System.out.println("0. Quay lại menu chính.");
-        System.out.print("Nhập lựa chọn của bạn: ");
-        luaChon = sc.nextInt();
-        sc.nextLine();
+            System.out.println("1. Thêm học viên vào danh sách.");
+            System.out.println("2. In danh sách học viên ra màn hình.");
+            System.out.println("3. Kiểm tra danh sách học viên có rỗng hay không.");
+            System.out.println("4. Lấy ra số lượng học viên trong danh sách.");
+            System.out.println("5. Làm rỗng danh sách học viên.");
+            System.out.println("6. Kiểm tra học viên có tồn tại trong danh sách hay không, dựa trên mã id.");
+            System.out.println("7. Xóa một học viên ra khỏi danh sách dựa trên mã id.");
+            System.out.println("8. Tìm kiếm tất cả học viên dựa trên Tên được nhập từ bàn phím.");
+            System.out.println("0. Quay lại menu chính.");
+            System.out.print("Nhập lựa chọn của bạn: ");
+            luaChon = sc.nextInt();
+            sc.nextLine();
         
-            
             switch (luaChon) {
                 case 0:
                 System.out.println("Quay lại menu chính.");
-                    break;
+                break;
+                
                 case 1:
                 {// Thêm học viên vào danh sách
                 System.out.println("Nhập Id: "); 
@@ -176,7 +181,7 @@ public class Test {
                 String hocphi=sc.nextLine();
                 System.out.println("Nhập yêu cầu thêm: ");
                 String bonus=sc.nextLine();
-               
+                
                 Parents hv = new Parents(id,hoVaTen, diachi, monhoc,sobuoi,hocphi,bonus);
                 dshv.themHocVien(hv);
                 break;}
@@ -219,15 +224,17 @@ public class Test {
                 
                 case 8:
                 //Tìm kiếm tất cả học viên dựa trên Tên được nhập từ bàn phím    
-                System.out.println("Nhập họ và tên: "); 
+                System.out.println("Nhập tên: "); 
                 String hoVaTen = sc.nextLine();
 		System.out.println("Kết quả tìm kiếm: ");
 		dshv.timHocVien(hoVaTen);
                 break;
+                
                 default:
                 System.out.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
             }
-        } while (luaChon != 0);
+        } 
+        while (luaChon != 0);
     }
 
    
